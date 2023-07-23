@@ -1,0 +1,39 @@
+.posts {
+    min-height: 5em;
+    width: 30%;
+    border: .3rem outset var(--primary_light);
+    box-sizing: border-box;
+}
+
+.date {
+    color: var(--onSecondary);
+    padding: 0px 5px;
+    margin: 0px;
+    background-color: var(--secondary);
+}
+
+.subject {
+    padding: 0px 5px 5px;
+    margin: 0px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.content {
+    padding: 0px 5px 5px;
+    margin: 0px;
+    border-top: 1px solid  
+}
+
+fieldset {
+    width: 35%;
+}
+
+input {
+    width: 95%;
+}
+
+textarea {
+    width: 95%;
+    resize: vertical;
+}

@@ -1,0 +1,24 @@
+<script src="/static/js/users.js"></script>
+
+<h1> Welcome to the Users Page! </h1>
+<p> Here you can create new users and see the list of users </p>
+
+<form id="createUserForm" name="createUserForm">
+    <fieldset>
+        <legend> Create User </legend>
+        <label for="username"> Username </label> <br/> <br/>
+        <input type="text" name="username" placeholder="Enter username here..."> <br/> <br/>
+        <label for="favColor"> Favourite Color </label> <br/> <br/>
+        <input type="color" name="favColor"> <br/> <br/>
+        <button id="createUser" type="submit"> Submit </button>
+        <button type="reset"> Clear </button>
+    </fieldset>
+</form>
+
+<hr/>
+
+<ul id="usersList">
+{{#each users}}
+    <li> Username: {{username}} || Color: {{color}} </li>
+{{/each}}
+</ul>

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+
+:root {
+    --primary: #EF7C8E;
+    --primary_dark: #f0324f;
+    --primary_light: #D8A7B1; 
+    --secondary: #B6E2D3;
+    --background: #ffffff;
+    --error: #b00020;
+    --onPrimary: #ffffff;
+    --onSecondary: #000000;
+    --onBackground: #ffffff;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+#main-content {
+    padding: 1rem;
+}
+

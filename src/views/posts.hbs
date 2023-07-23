@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/static/css/posts.css">
+<h1> Create Post </h1>
+<form id="postForm" name="postForm">
+    <fieldset>
+        <legend>Create Post</legend>
+        <label> Username </label> <br>
+        <select id="user" name="user">
+            {{#each users}}
+            <option value="{{_id}}"> {{username}} </option>
+            {{/each}}
+        </select> <br>
+        <label> Subject </label>
+        <input type="text" name="subject" placeholder="subject">
+        <label> Content </label>
+        <textarea placeholder="content" name="content"></textarea>
+        <button id="postBtn" type="button"> Post </button>
+        <button type="reset"> Reset </button>
+    </fieldset>
+</form>
+<hr />
+{{#if posts}}
+{{#each posts}}
+{{> post this}}
+<br>
+{{/each}}
+{{else}}
+<p> No posts to show...</p>
+{{/if}}
+<script src="/static/js/posts.js"></script>
