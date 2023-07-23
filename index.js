@@ -31,7 +31,7 @@ async function main () {
 
     app.use(router);
     
-    app.listen(process.env.SERVER_PORT, () => {
+    app.listen(process.env.PORT, () => {
         console.log("Express app now listening...");
         connect().then(() => {
             console.log("Now connected to MongoDB Server.");
