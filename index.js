@@ -1,3 +1,4 @@
+import "dotenv/config";
 // System-related packages
 import { dirname } from "path";
 import { fileURLToPath } from 'url';
@@ -30,7 +31,7 @@ async function main () {
 
     app.use(router);
     
-    app.listen(process.env.PORT, () => {
+    app.listen(process.env.SERVER_PORT, () => {
         console.log("Express app now listening...");
         connect().then(() => {
             console.log("Now connected to MongoDB Server.");
