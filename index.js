@@ -1,4 +1,5 @@
 // System-related packages
+import "dotenv/config";
 import { dirname } from "path";
 import { fileURLToPath } from 'url';
 // Web-app related packages
